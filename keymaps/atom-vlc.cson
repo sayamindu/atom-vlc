@@ -9,3 +9,5 @@
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
 'atom-workspace':
   'ctrl-alt-v': 'atom-vlc:toggle'
+  'alt-space': 'atom-vlc:toggleplay'
+  'alt-left': 'atom-vlc:seekback'

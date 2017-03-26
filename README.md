@@ -21,6 +21,9 @@ Or Settings ➔ Install ➔ Search for `atom-vlc`
 * Shows playing song artwork
 * Allows forward, backward, play/pause and stop
 * Compact and full mode
+* Keyboard shortcuts to toggle playback and shift back (useful for transcription)
+  * alt-space: toggle playback
+  * alt-left: skip back 3 seconds
 
 ## Configuration
 

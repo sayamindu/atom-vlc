@@ -129,8 +129,9 @@ class AtomVlcView extends View
 
   initialize: (state) ->
     @subscriptions = new CompositeDisposable
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-vlc:toggleplay', =>
-      @pause()
+    @subscriptions.add atom.commands.add 'atom-workspace',
+        'atom-vlc:toggleplay': => @pause()
+        'atom-vlc:seekback': => @seek_back()
 
   attached: ->
     setInterval =>
@@ -161,6 +162,9 @@ class AtomVlcView extends View
 
   stop: ->
     @vlc.stop (data) => @update data
+
+  seek_back: ->
+    @vlc.seek_back (data) => @update data
 
   setVlc: (@vlc) ->
 

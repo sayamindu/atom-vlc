@@ -98,3 +98,6 @@ class Vlc
 
   set_volume: (val, handler) ->
     @request 'volume', "val=#{val}", handler
+
+  seek_back: (handler) ->
+    @request 'seek', "val=-3s", handler
